@@ -2,21 +2,27 @@ public class Operadores {
 
     public static void main(String[] args) {
         // classe Operadores.java
-        String nomeCompleto = "LINGUAGEM" + "JAVA";
-        System.out.println(nomeCompleto);
-        // qual o resultado das expressoes abaixo?
-        String concatenacao = "?";
+        int numero = 5;
 
-        concatenacao = 1 + 1 + 1 + "1";
-        System.out.println(concatenacao);
+        // Imprimindo o numero negativo
+        System.out.println(-numero);
 
-        concatenacao = 1 + "1" + 1 + 1;
+        // incrementando numero em mais 1 numero, imprime 6
+        numero++;
+        //numero = numero + 1
+        System.out.println(numero);
 
-        concatenacao = 1 + "1" + 1 + "1";
+        // incrementando numero em mais 1 numero, imprime 7
+        System.out.println(numero++);// ops algo de errado não está certo
 
-        concatenacao = "1" + 1 + 1 + 1;
+        System.out.println(numero);// agora sim, numero virou 7
 
-        concatenacao = "1" + (1 + 1 + 1);
+        // ordem de precedencia conta aqui
+        System.out.println(++numero);
+
+        boolean verdadeiro = true;
+
+        System.out.println("Inverteu " + !verdadeiro);
 
     }
 }
