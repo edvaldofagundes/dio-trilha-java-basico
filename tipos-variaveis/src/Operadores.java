@@ -2,27 +2,22 @@ public class Operadores {
 
     public static void main(String[] args) {
         // classe Operadores.java
-        int numero = 5;
+int a, b;
 
-        // Imprimindo o numero negativo
-        System.out.println(-numero);
+a = 5;
+b = 6;
 
-        // incrementando numero em mais 1 numero, imprime 6
-        numero++;
-        //numero = numero + 1
-        System.out.println(numero);
+/* EXEMPLO DE CONDICIONAL UTILIZANDO UMA ESTRUTURA IF/ELSE
+if(a==b)
+   resultado = "verdadeiro";
+else
+   resultado = "falso";
+*/
 
-        // incrementando numero em mais 1 numero, imprime 7
-        System.out.println(numero++);// ops algo de errado não está certo
+//MESMA CONDICIONAL, MAS DESSA VEZ, UTILIZANDO O OPERADOR CONDICIONAL TERNÁRIO
+String resultado = (a==b) ? "verdadeiro" : "false";
 
-        System.out.println(numero);// agora sim, numero virou 7
-
-        // ordem de precedencia conta aqui
-        System.out.println(++numero);
-
-        boolean verdadeiro = true;
-
-        System.out.println("Inverteu " + !verdadeiro);
+System.out.println(resultado);
 
     }
 }
