@@ -2,24 +2,23 @@ public class Operadores {
 
     public static void main(String[] args) {
 
-        // ComparacaoAvancada.java
- 
-        
-    int numero1 = 130;
-    int numero2 = 130;
-    System.out.println(numero1 == numero2); //true
-    
-    Integer numero1 = 130;
-    Integer numero2 = 130;
+       // Operadores.java
+boolean condicao1=true;
 
-    System.out.println(numero1 == numero2); //false
-    
-    // A razão pela qual o resultado é false, é devido o Java tratar os valores
-    // Como objetos a partir de agora.
-    // Qual a solução ?
-    // Quando queremos comparar objetos, usamos o método equals
-    
-     System.out.println(numero1.equals(numero2)); 
+boolean condicao2=true;
+
+/* Aqui estamos utilizando o operador lógico E para fazer a união de duas 
+expressões. 
+É como se estivesse escrito:
+ "Se Condicao1 e Condicao2 forem verdadeiras, executar código"
+*/
+
+if(condicao1 && condicao2)
+	System.out.print("Os dois valores precisam ser verdadeiros ");;
+
+//Se condicao1 OU condicao2 for verdadeira, executar código.
+if(condicao1 || condicao2)
+	System.out.print(" Um dos valores precisa ser verdadeiro");
 
 
     }
